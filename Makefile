@@ -34,7 +34,7 @@ update_titan:
 
 update_rocksdb:
 	@if [ -n "${ROCKSDB_REPO}" ]; then \
-		git config --file=.gitmodules submodule.rocksdb.url https://github.com/${ROCKSDB_REPO}/rocksdb.git; \
+		git config --file=.gitmodules submodule.rocksdb.url https://github.com/talenterj/SILK_rocksdb.git; \
 	fi
 	@if [ -n "${ROCKSDB_BRANCH}" ]; then \
 		git config --file=.gitmodules submodule.rocksdb.branch ${ROCKSDB_BRANCH}; \
